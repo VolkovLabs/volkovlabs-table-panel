@@ -34,6 +34,7 @@ export const TEST_IDS = {
     fieldType: createSelector('data-testid column-editor field-type'),
     fieldGroup: createSelector('data-testid column-editor field-group'),
     fieldAggregation: createSelector('data-testid column-editor field-aggregation'),
+    fieldFilterEnabled: createSelector('data-testid column-editor field-filter-enabled'),
   },
   defaultCellRenderer: {
     root: createSelector('data-testid default-cell-renderer'),
@@ -45,3 +46,8 @@ export const TEST_IDS = {
     buttonExpandCell: createSelector((name: unknown) => `table button-expand-cell-${name}`),
   },
 };
+
+/**
+ * All Value Parameter
+ */
+export const ALL_VALUE_PARAMETER = '$__all';
